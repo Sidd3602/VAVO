@@ -115,6 +115,20 @@ a { text-decoration: none; color: inherit; }
   background: var(--forest);
 }
 
+.btn--products {
+  background: transparent;
+  color: var(--forest);
+  border: 1px solid var(--forest);
+  padding: 14px 24px;
+  transition: all 0.3s ease;
+}
+
+.btn--products:hover {
+  background: var(--forest);
+  color: var(--parchment);
+  transform: translateY(-2px);
+}
+
 .btn--full { width: 100%; justify-content: center; }
 
 /* ── REVEAL ANIMATIONS ── */
@@ -549,6 +563,10 @@ a { text-decoration: none; color: inherit; }
 
 .attr__cta {
   margin-top: 28px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 /* ── PHILOSOPHY ── */
