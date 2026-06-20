@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Products — VAVO Organics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="products.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════ -->
+  <header class="nav-header" id="nav-header">
+    <nav class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-vavo">VAVO</span>
+        <span class="logo-organics">Organics</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="products.html" class="nav-link nav-link--active">Products</a></li>
+        <li><a href="index.html#philosophy" class="nav-link">Philosophy</a></li>
+        <li><a href="index.html#dealers" class="nav-link">Dealers</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <a href="https://wa.me/919999999999?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20VAVO%20Organics%20products."
+         class="btn-enquire" target="_blank" rel="noopener">Enquire</a>
+
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content reveal">
+      <p class="hero-eyebrow">Crafted by Nature</p>
+      <h1 class="hero-heading">Our Product<br /><em>Range</em></h1>
+      <p class="hero-sub">Naturally crafted inputs for healthier soil,<br />stronger roots and sustainable growth.</p>
+      <div class="hero-divider"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       PRODUCT COLLECTION
+  ══════════════════════════════════════ -->
+  <section class="collection" id="products">
+    <div class="collection-inner">
+      <div class="section-label reveal">Collection</div>
+      <h2 class="section-heading reveal">Each product, a<br /><em>quiet promise</em> to the earth.</h2>
+      <div class="product-grid" id="product-grid">
+        <!-- Dynamically injected by products.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       PRODUCT DETAIL MODAL
+  ══════════════════════════════════════ -->
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-panel" id="modal-panel">
+      <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+      <div class="modal-layout">
+        <div class="modal-image-wrap">
+          <img class="modal-image" id="modal-image" src="" alt="" />
+          <div class="modal-badge" id="modal-badge"></div>
+        </div>
+        <div class="modal-body">
+          <p class="modal-eyebrow" id="modal-category"></p>
+          <h2 class="modal-title" id="modal-title"></h2>
+          <p class="modal-weight" id="modal-weight"></p>
+          <p class="modal-desc" id="modal-desc"></p>
+          <div class="modal-section" id="modal-benefits-wrap">
+            <h4 class="modal-section-title">Key Benefits</h4>
+            <ul class="modal-list" id="modal-benefits"></ul>
+          </div>
+          <div class="modal-section" id="modal-usage-wrap">
+            <h4 class="modal-section-title">How to Use</h4>
+            <p class="modal-usage-text" id="modal-usage"></p>
+          </div>
+          <a class="btn-whatsapp" id="modal-whatsapp" href="#" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.004 2.003C6.478 2.003 2.003 6.478 2.003 12.004c0 1.932.535 3.735 1.465 5.275L2 22l4.84-1.45A9.932 9.932 0 0012.004 22c5.526 0 10.001-4.475 10.001-10.001 0-5.527-4.475-10-10.001-10z"/></svg>
+            Enquire on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       DEALER SECTION
+  ══════════════════════════════════════ -->
+  <section class="dealer-section" id="dealers">
+    <div class="dealer-inner reveal">
+      <p class="dealer-eyebrow">Distribution</p>
+      <h2 class="dealer-heading">Become a<br /><em>VAVO Dealer</em></h2>
+      <p class="dealer-text">Join our growing distribution network across India.<br />Partner with a brand built on integrity, quality and purpose.</p>
+      <div class="dealer-actions">
+        <a href="index.html#contact" class="btn-primary">Become a Dealer</a>
+        <a href="https://wa.me/919999999999?text=I%20am%20interested%20in%20becoming%20a%20VAVO%20Organics%20dealer."
+           class="btn-ghost" target="_blank" rel="noopener">WhatsApp Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FAQ
+  ══════════════════════════════════════ -->
+  <section class="faq-section" id="faq">
+    <div class="faq-inner">
+      <div class="section-label reveal">FAQ</div>
+      <h2 class="section-heading reveal">Questions, <em>answered.</em></h2>
+      <div class="faq-list" id="faq-list">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FINAL CTA
+  ══════════════════════════════════════ -->
+  <section class="cta-section">
+    <div class="cta-texture"></div>
+    <div class="cta-inner reveal">
+      <p class="cta-eyebrow">Let's Begin</p>
+      <h2 class="cta-heading">Ready to Grow<br /><em>Naturally?</em></h2>
+      <div class="cta-actions">
+        <a href="https://wa.me/919999999999?text=I%20would%20like%20to%20get%20pricing%20for%20VAVO%20Organics%20products."
+           class="btn-primary" target="_blank" rel="noopener">Get Pricing</a>
+        <a href="https://wa.me/919999999999" class="btn-ghost" target="_blank" rel="noopener">WhatsApp Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">
+          <span class="logo-vavo">VAVO</span>
+          <span class="logo-organics">Organics</span>
+        </a>
+        <p class="footer-tagline">Rooted in nature. <br />Grown with purpose.</p>
+        <a href="https://wa.me/919999999999" class="footer-whatsapp" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.004 2.003C6.478 2.003 2.003 6.478 2.003 12.004c0 1.932.535 3.735 1.465 5.275L2 22l4.84-1.45A9.932 9.932 0 0012.004 22c5.526 0 10.001-4.475 10.001-10.001 0-5.527-4.475-10-10.001-10z"/></svg>
+          +91 99999 99999
+        </a>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">Navigate</h4>
+        <ul class="footer-col-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="index.html#philosophy">Philosophy</a></li>
+          <li><a href="index.html#dealers">Dealers</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">Products</h4>
+        <ul class="footer-col-links">
+          <li><a href="#products">Cow Dung Powder</a></li>
+          <li><a href="#products">Neem Cake Powder</a></li>
+          <li><a href="#products">Cocopeat</a></li>
+          <li><a href="#products">Cow Dung Cake</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">Contact</h4>
+        <ul class="footer-col-links footer-col-links--contact">
+          <li>info@vavoorganics.com</li>
+          <li>+91 99999 99999</li>
+          <li>Gujarat, India</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 VAVO Organics. All rights reserved.</p>
+      <p>Crafted with care for the earth.</p>
+    </div>
+  </footer>
+
+  <script src="products.js"></script>
+</body>
+</html>
