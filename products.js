@@ -110,7 +110,7 @@ const FAQS = [
 ];
 
 /* ─── WHATSAPP BASE ──────────────────────── */
-const WA_BASE = 'https://wa.me/919999999999?text=';
+const WA_BASE = 'https://wa.me/919313259360?text=';
 
 /* ════════════════════════════════════════════
    DOM HELPERS
