@@ -124,7 +124,7 @@
       const waText = encodeURIComponent(
         `Hi VAVO Organics,\n\nName: ${name}\nPhone: ${phone}\nI am a: ${interest || 'Not specified'}\n\nMessage: ${message || 'Interested in your products. Please share details.'}`
       );
-      const waUrl = `https://wa.me/919876543210?text=${waText}`;
+      const waUrl = `https://wa.me/919313259360?text=${waText}`;
 
       showToast('Redirecting to WhatsApp…', 'success');
       setTimeout(() => window.open(waUrl, '_blank'), 800);
