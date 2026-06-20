@@ -334,14 +334,25 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .card-image-wrap {
   position: relative;
-  aspect-ratio: 4/3;
+  height: 550px;
+  background: linear-gradient(
+    180deg,
+    #faf7f1 0%,
+    #f1ece2 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
   overflow: hidden;
-  background: var(--mist);
 }
+
 .card-image {
-  width: 100%; height: 100%;
-  object-fit: cover;
-  transition: transform 0.7s var(--ease-luxury);
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 15px 30px rgba(0,0,0,0.15));
 }
 .product-card:hover .card-image {
   transform: scale(1.04);
@@ -497,8 +508,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   border-radius: 6px 0 0 6px;
 }
 .modal-image {
-  width: 100%; height: 100%;
-  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .modal-badge {
   position: absolute;
