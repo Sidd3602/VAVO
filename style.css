@@ -116,17 +116,14 @@ a { text-decoration: none; color: inherit; }
 }
 
 .btn--products {
-  background: transparent;
-  color: var(--forest);
-  border: 1px solid var(--forest);
-  padding: 14px 24px;
-  transition: all 0.3s ease;
+  background: var(--gold);
+  color: white;
+  border: 1px solid var(--gold);
 }
 
 .btn--products:hover {
-  background: var(--forest);
-  color: var(--parchment);
-  transform: translateY(-2px);
+  background: #b89252;
+  border-color: #b89252;
 }
 
 .btn--full { width: 100%; justify-content: center; }
